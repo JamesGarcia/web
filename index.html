@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('div.bar').on('click', function(){
+                    $('div.page').hide();
+                    $('#'+$(this).attr('ref')).show();
+                    $('div.bar').removeClass('selected');
+                    $(this).addClass('selected');
+                });
+                $('#default').click();
+            });
+        </script>
+    </head>
+    <body>
+        <div style="max-width:800px; margin: auto; padding: 25px">
+        <ul class="bar">
+            <li class="bar">
+                <div id="default" ref='overview' class="bar"> Overview </div>
+            </li>
+            <li class="bar">
+                <div ref='professional' class="bar"> Professional </div>
+            </li>
+            <li class="bar">
+                <div ref='tutoring' class="bar"> Tutoring </div>
+            </li>
+            <li class="bar">
+                <div ref='contact' class="bar"> Contact </div>
+            </li>
+        </ul>
+        <div class="main_matter">
+            <div id="overview" class="page">
+                <p>
+                    I am an undergrad at Carnegie Mellon University, studying Electrical and Computer Engineering, with a focus on
+                    computer hardware, as well as a minor in Logic and Discrete Mathematics. I will be graduating in the spring of 2021,
+                    and intend to work towards creating new and innovative hardware solutions.
+                </p>
+                <p>
+                    As of May 2019, I have been a co-president for Build18, Carnegie Mellon's premier hardware hackathon. We host a
+                    week long hackathon where students get to build a project from the ground up and demonstrate a working, viable
+                    product. Check out our website at <a href="https://www.build18.org/">https://www.build18.org</a> for more informationd.
+                </p>
+                <p>
+                    I have worked for two summers with the State of Delaware Department of Health and Social Services in the Information
+                    Resource Management department. During my time, I wrote software for and maintained two internal full-stack
+                    applications in the .NET suite, using a stack consisting of ASP.NET/C#/javascript/jquery/SQL.
+                </p>
+            </div>
+            <div id="projects" class="page">
+
+            </div>
+            <div id="professional" class="page">
+                <p>
+                    I have worked for two summers with the State of Delaware Department of Health and Social Services in the Information
+                    Resource Management department. During my time, I wrote software for and maintained two internal full-stack
+                    applications in the .NET suite, using a stack consisting of ASP.NET/C#/javascript/jquery/SQL.
+                </p>
+                <p>
+                    I have also worked for one semester as a Assistant Teaching Assistant for an undergraduate physics course,
+                    Physics I for Engineers, at Carnegie Mellon University. I will be returning to this position for another semester
+                    in the upcoming fall. As an Assistant Teaching Assistant, I helped facilitate students' understanding of
+                    materials and concepts during recitations. We covered topics including: introductory statics and mechanics,
+                    gravitation, force, work, energy, and introductory thermodynamics such as heat, entropy, and otto and diesel cycles.
+                </p>
+                <p>
+                    I also have done freelance tutoring for the past four years in many different topics, mainly centered around
+                    computer science, as well as math.
+                </p>
+            </div>
+            <div id="tutoring" class="page">
+                <p>
+                    I have four years of tutoring experience in various subjects, as well as one semester of experience as an
+                    Assistant Teaching Assistant at Carnegie Mellon University, and will be returning to the position in the fall.
+                    I have also written lesson plans for three semesters of Student Taught Courses at Carnegie Mellon University,
+                    having taught twice, and having plans to teach again in the fall. With these skills and experience I offer one
+                    on one tutoring services in computer science, electrical engineering, math, and physics.
+                </p>
+                I can cover the following topics:
+                <div style="padding: 10px">
+                    <b style="text-decoration: underline;"><i>Computer Science</i></b>
+                    <ul style="margin: 0px;padding-left: 20px">
+                        <li>
+                            <b style="text-decoration: underline;"><i>Programming</i></b>
+                            <ul style="margin: 0px;padding-left: 20px">
+                                <li>C Programming</li>
+                                <li>Java Programming</li>
+                                <li>Python Programming</li>
+                                <li>C++ Programming</li>
+                                <li>C# Programming</li>
+                                <li>System Verilog</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b style="text-decoration: underline;"><i>Web Development</i></b>
+                            <ul style="margin: 0px;padding-left: 20px">
+                                <li>HTML/CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b style="text-decoration: underline;"><i>Data Structures</i></b>
+                            <ul style="margin: 0px;padding-left: 20px">
+                                <li>Lists</li>
+                                <li>Queues</li>
+                                <li>Stacks</li>
+                                <li>Heaps</li>
+                                <li>Trees</li>
+                                <li>Graphs</li>
+                                <li>Dictionaries</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b style="text-decoration: underline;"><i>Algorithms</i></b>
+                            <ul style="margin: 0px;padding-left: 20px">
+                                <li>Sorting</li>
+                                <li>Hashing</li>
+                                <li>Parsing</li>
+                                <li>Data Structure Algorithms</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b style="text-decoration: underline;"><i>Analysis</i></b>
+                            <ul style="margin: 0px;padding-left: 20px">
+                                <li>Big O Complexity</li>
+                                <li>Amortized Analysis</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    And more!
+                </div>
+
+                Fill out my scheduling form <a href="https://forms.gle/bYF2a2E9G7xzkDPG7">here</a> or email me at
+                <a href="mailto:jsgarcia.tutoring@gmail.com">jsgarcia.tutoring@gmail.com</a> to book a lesson.
+
+            </div>
+            <div id="contact" class="page">
+                If you would like to contact me, use one of the following:
+                <ul style="list-style: disc">
+                    <li>personal mail : <a href="mailto:garcia.jamessunga@gmail.com">garcia.jamessunga@gmail.com</a></li>
+                    <li>tutoring mail : <a href="mailto:jsgarcia.tutoring@gmail.com">jsgarcia.tutoring@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="signature">
+            Made by James Sunga Garcia
+        </div>
+    </div>
+    </body>
+</html>
